@@ -1,0 +1,228 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    background-image: linear-gradient(to right, #000000, #4b0606);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 0;
+
+  }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-text {
+    color: rgb(255, 255, 255);
+}
+
+.nav-text:hover {
+    color: rgb(162, 162, 162);
+    transition: 0.5s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+.bar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.authentication {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-image: linear-gradient(to right, #000000, #4b0606);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid black;
+}
+
+.material-symbols-outlined {
+    margin-right: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+    color: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    padding: 50px;
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.close {
+    position: absolute;
+    top: 1px;
+    right: 14px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+}
+
+.input {
+    margin: 10px;
+    padding: 10px;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.button {
+    margin: 10px;
+    padding: 10px;
+    width: relative;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    outline: none;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: rgb(162, 162, 162);
+    transition: 0.5s;
+}
+  
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-image: linear-gradient(to right, #000000, #4b0606);
+    border-radius: 25px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.735);
+    color: white;
+    transition: ease-in-out 0.5s;
+
+}
+
+.post-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 1rem;
+    margin: 1rem;
+    background-image: linear-gradient(to right, #000000, #4b0606);
+    border-radius: 25px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.735);
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
+.post-image {
+    width: 300px;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+}
+
+.post-text-container {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+
+.post-header {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Зміна коліру полоси прокрутки */
+::-webkit-scrollbar {
+    width: 12px; /* Ширина полоси прокрутки */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #340404; /* Колір самої полоси прокрутки */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #870d0d; /* Колір полоси прокрутки при наведенні курсора */
+  }
+  
+/* Зміна фонового коліру полоси прокрутки */
+::-webkit-scrollbar-track {
+    background-color: #4b0606; /* Колір фону полоси прокрутки */
+  }
+  
+
+
+@media (max-width: 767px) {
+    .nav-text{
+        display: none;
+    }
+
+    .post-image {
+        width: 150px;
+        height: 300px;
+        border-radius: 25px;
+        transition: ease-in-out 0.5s;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px; /* Ширина полоси прокрутки */
+      }
+}
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+  }
+
+@media (min-width: 1025px) {
+    body {
+        background-color: white;
+    }
+  }
+  
